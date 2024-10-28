@@ -1,0 +1,19 @@
+Console.WriteLine("Indtast det først tal:");
+double tal1 = Convert.ToDouble(Console.ReadLine());
+
+Console.WriteLine("Indtast det andet tal:");
+double tal2 = Convert.ToDouble(Console.ReadLine());
+
+double SumAdd = tal1 + tal2;
+double SumSub = tal1 - tal2;
+double SumDiv = tal2 / tal1;
+double SumMul = tal1 * tal2;
+
+Console.Clear();
+
+Console.WriteLine($"Addtition: {tal1} + {tal2} = {SumAdd}");
+Console.WriteLine($"Subtraktion: {tal1} - {tal2} = {SumSub}");
+Console.WriteLine($"Divition: {tal1} / {tal2} = {SumDiv}");
+Console.WriteLine($"Multiplikation: {tal1} * {tal2} = {SumMul}");
+
+Console.ReadKey(true);

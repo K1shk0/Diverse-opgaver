@@ -1,0 +1,5 @@
+string navn = "Yosef";
+
+Console.WriteLine(navn);
+
+Console.ReadKey(true);
