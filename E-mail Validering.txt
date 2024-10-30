@@ -1,0 +1,21 @@
+Console.WriteLine("Indtast dit E-mail:");
+string email = Console.ReadLine();
+
+bool gyldig = false;
+
+if (email.Contains("@") && email.Contains("."))
+{
+    gyldig = true;
+}
+
+if (gyldig)
+{
+    Console.WriteLine("E-mailen er gyldig");
+}
+
+else
+{
+    Console.WriteLine("E-mailadressen er ikke gyldig. Den skal indeholde '@' og '.'.");
+}
+
+Console.ReadKey(true);

@@ -1,0 +1,14 @@
+Console.WriteLine("Indtast dit alder:");
+double alder = Convert.ToDouble(Console.ReadLine());
+
+if (alder >= 18)
+{
+    Console.WriteLine("Du er myndige");
+}
+
+else
+{
+    Console.WriteLine("Du er ikke myndige");
+}
+
+Console.ReadKey(true);

@@ -1,0 +1,11 @@
+static void Main(string[] args)
+{
+    VelkomstBesked();
+
+    Console.ReadKey(true);
+}
+
+public static void VelkomstBesked()
+{
+    Console.WriteLine("Velkommen til programmet!");
+}

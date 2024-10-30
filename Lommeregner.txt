@@ -1,0 +1,60 @@
+Console.WriteLine("Vælg en operation:");
+Console.WriteLine("1. Addition (+)");
+Console.WriteLine("2. Subtraktion (-)");
+Console.WriteLine("3. Multiplikation (*)");
+Console.WriteLine("4. Division (/)");
+
+int valg = int.Parse(Console.ReadLine());
+
+
+if (valg != 1 && valg != 2 && valg != 3 && valg != 4)
+{
+    Console.WriteLine("Ugyldigt valg. Prøv igen.");
+    Console.ReadKey(true);
+    return;
+}
+
+Console.WriteLine("Indtast det første tal:");
+double tal1 = double.Parse(Console.ReadLine());
+
+Console.WriteLine("Indtast det andet tal:");
+double tal2 = double.Parse(Console.ReadLine());
+
+double resultat = 0;
+
+
+switch (valg)
+{
+    case 1:
+        Console.WriteLine("Du har valgt addition.");
+        resultat = tal1 + tal2;
+        Console.WriteLine($"{tal1} + {tal2} = {resultat}");
+        break;
+
+    case 2:
+        Console.WriteLine("Du har valgt subtraktion.");
+        resultat = tal1 - tal2;
+        Console.WriteLine($"{tal1} - {tal2} = {resultat}");
+        break;
+
+    case 3:
+        Console.WriteLine("Du har valgt multiplikation.");
+        resultat = tal1 * tal2;
+        Console.WriteLine($"{tal1} * {tal2} = {resultat}");
+        break;
+
+    case 4:
+        Console.WriteLine("Du har valgt division.");
+        if (tal2 != 0)
+        {
+            resultat = tal1 / tal2;
+            Console.WriteLine($"{tal1} / {tal2} = {resultat}");
+        }
+        else
+        {
+            Console.WriteLine("Fejl: Du kan ikke dividere med nul.");
+        }
+        break;
+}
+
+Console.ReadKey(true);

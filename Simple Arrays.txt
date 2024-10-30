@@ -1,0 +1,8 @@
+string[] Frugter = { "Æble", "Banan", "Appelsin" };
+
+Console.WriteLine("Frugt liste:");
+Console.WriteLine(Frugter[0]);
+Console.WriteLine(Frugter[1]);
+Console.WriteLine(Frugter[2]);
+
+Console.ReadKey(true);
